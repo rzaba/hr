@@ -1,0 +1,7 @@
+hr_employee_add:
+    path:     /employee/add
+    defaults: { _controller: HrEmployeeBundle:Employee:add }
+
+hr_employee_list:
+    path:     /employee/list
+    defaults: { _controller: HrEmployeeBundle:Employee:list }

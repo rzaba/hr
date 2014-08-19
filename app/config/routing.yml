@@ -1,0 +1,8 @@
+hr_time_managment:
+    resource: "@HrTimeManagmentBundle/Resources/config/routing.yml"
+    prefix:   /
+
+hr_employee:
+    resource: "@HrEmployeeBundle/Resources/config/routing.yml"
+    prefix:   /
+

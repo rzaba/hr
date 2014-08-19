@@ -1,0 +1,9 @@
+Hr\EmployeeBundle\Entity\Employee:
+    properties:
+        name:
+            - NotBlank: ~
+            - Length:
+                min: 3
+                max: 45
+        surname:
+            - NotBlank: ~

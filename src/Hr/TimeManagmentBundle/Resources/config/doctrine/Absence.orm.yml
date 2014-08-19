@@ -1,0 +1,36 @@
+Hr\TimeManagmentBundle\Entity\Absence:
+    type: entity
+    table: absence
+    repositoryClass: Hr\TimeManagmentBundle\Entity\AbsenceRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        absenceType:
+            type: smallint
+            column: absence_type
+        absenceStatus:
+            type: smallint
+            column: absence_status
+        dateFrom:
+            type: date
+            column: date_from
+        dateTo:
+            type: date
+            column: date_to
+        days:
+            type: integer
+        itemStatus:
+            type: smallint
+            column: item_status
+    manyToOne:
+        employee:
+            targetEntity: Hr\EmployeeBundle\Entity\Employee
+            inversedBy: absences
+            joinColumn:
+                name: employee_id
+                referencedColumnName: id
+    lifecycleCallbacks: {  }

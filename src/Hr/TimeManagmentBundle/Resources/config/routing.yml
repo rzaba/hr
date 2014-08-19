@@ -1,0 +1,3 @@
+hr_time_managment_absence_list:
+    path:     /absence/list
+    defaults: { _controller: HrTimeManagmentBundle:Absence:list }
